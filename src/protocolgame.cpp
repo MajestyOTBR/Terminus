@@ -2083,7 +2083,7 @@ void ProtocolGame::sendHouseWindow(uint32_t windowTextId, House* _house,
 void ProtocolGame::sendOutfitWindow()
 {
 	#define MAX_NUMBER_OF_OUTFITS 15
-	//client 7.81 outfits limit is 15
+	//client 7.9x outfits limit is 15
 
 	NetworkMessage_ptr msg = getOutputBuffer();
 	if (msg){
@@ -2107,6 +2107,7 @@ void ProtocolGame::sendOutfitWindow()
 		OutfitListType::const_iterator it;
 		for(it = player_outfits.begin(); it != player_outfits.end() && (counter < MAX_NUMBER_OF_OUTFITS); ++it, ++counter){
 			msg->AddU16((*it)->looktype);
+			msg->AddString(Outfits::getInstance()->getOutfitName((*it)->looktype));
 			msg->AddByte((*it)->addons);
 		}
 	}
