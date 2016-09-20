@@ -34,10 +34,10 @@ typedef boost::shared_ptr<OutputMessage> OutputMessage_ptr;
 typedef boost::shared_ptr<Connection> Connection_ptr;
 class RSA;
 
-// Beware! This server is optimized to work with 7.8x protocol only
+// Beware! This server is optimized to work with 7.9x protocol only
 // Working on higher / lower versions will require work in the game protocol
-#define CLIENT_VERSION_MIN 780
-#define CLIENT_VERSION_MAX 782
+#define CLIENT_VERSION_MIN 790
+#define CLIENT_VERSION_MAX 792
 
 #define STRING_CLIENT_VERSION "This server requires client version " OTSERV_CLIENT_VERSION "."
 

@@ -211,7 +211,7 @@ int Items::loadFromOtb(std::string file)
 		}
 	}
 
-	/*if (Items::dwMajorVersion != 2) {
+	if (Items::dwMajorVersion != CLIENT_VERSION_755) {
 		std::cout << "Not supported items.otb version." << std::endl;
 		return ERROR_INVALID_FORMAT;
 	}
@@ -219,7 +219,12 @@ int Items::loadFromOtb(std::string file)
 	if(Items::dwMajorVersion == 0xFFFFFFFF){
 		std::cout << "[Warning] Items::loadFromOtb items.otb using generic client version."
 			<< std::endl;
-	}*/
+	}
+	
+	else if(Items::dwMinorVersion != CLIENT_VERSION_792) {
+		std::cout << "Not supported items.otb client version." << std::endl;
+		return ERROR_INVALID_FORMAT;
+	}
 
 	node = f.getChildNode(node, type);
 

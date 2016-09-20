@@ -186,7 +186,7 @@ int main(int argc, char** argv)
 #endif
 
 	std::cout << ":: " OTSERV_NAME " Version " OTSERV_VERSION << std::endl;
-	std::cout << ":: Developers: Nottinghster & Tryller" << std::endl;
+	std::cout << ":: Developers: Nottinghster, Tryller & diegorodriguesvieira" << std::endl;
 	std::cout << ":: Compilation date: " __DATE__ " " __TIME__ << std::endl;
 	std::cout << ":: ==============================================" << std::endl;
 	std::cout << "::" << std::endl;
