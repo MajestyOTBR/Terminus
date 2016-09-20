@@ -58,6 +58,10 @@ enum MagicEffectClasses {
 	NM_ME_SOUND_WHITE      = 0x18, //24
 	NM_ME_BUBBLES	       = 0x19, //25
 	NM_ME_CRAPS            = 0x1A, //26	
+	NM_ME_GIFT_WRAPS       = 0x1B, //27
+	NM_ME_FIREWORK_YELLOW  = 0x1C, //28
+	NM_ME_FIREWORK_RED     = 0x1D, //29
+	NM_ME_FIREWORK_BLUE    = 0x1E, //30
 	
 	//for internal use, dont send to client
 	NM_ME_NONE             = 0xFF,
@@ -80,6 +84,7 @@ enum ShootType_t {
 	NM_SHOOT_SNOWBALL       = 0x0C, //12
 	NM_SHOOT_POWERBOLT      = 0x0D, //13
 	NM_SHOOT_POISONFIELD    = 0x0E, //14
+	NM_SHOOT_INFERNALBOLT   = 0x0F, //15
 	
 	//for internal use, dont send to client
 	NM_SHOOT_WEAPONTYPE     = 0xFE, //254
