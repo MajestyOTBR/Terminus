@@ -1,4 +1,4 @@
-# Solidus
+# Terminus
 OpenTibia Server for Tibia 7.9x
 This OTServer is based on OThire, that is based on OTServ Trunk SVN work (latest stable trunk rev).
 
