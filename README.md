@@ -4,7 +4,7 @@ This OTServer is based on OThire, that is based on OTServ Trunk SVN work (latest
 
 Note: This server include all fixes that I posted in OTHire thread.
 
-Developers: Nottinghster, Tryller & diegorodriguesvieira
+Developers: Nottinghster, Tryller, diegorodriguesvieira & lcssxd
 
 .:: Features ::.
 
